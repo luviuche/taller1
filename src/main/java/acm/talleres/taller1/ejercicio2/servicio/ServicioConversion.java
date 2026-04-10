@@ -9,6 +9,7 @@ public class ServicioConversion {
 
     private final Conversor conversor;
 
+    // Usamos @Qualifier para elegir entre "conversorTemperatura" o "conversorDistancia"
     public ServicioConversion(@Qualifier("conversorTemperatura") Conversor conversor) {
         this.conversor = conversor;
     }
